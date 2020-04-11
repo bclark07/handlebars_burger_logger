@@ -17,3 +17,9 @@ li {
 .form-group {
   margin-bottom: 5px;
 }
+
+.banner {
+  background-image: url(" /assets/img/burger.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

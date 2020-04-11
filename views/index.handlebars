@@ -1,16 +1,16 @@
-<h1>Make a Burger!</h1>
+<h1>Enter the name of a burger you would like to eat, and then click the button when you have eaten it.</h1>
 
-<h2>something here</h2>
+<h2>Waiting to be eaten</h2>
 
 <ul>
   {{#each burgers}}
   {{#unless devoured}}
-  {{> burger/burger-block sleep=true}}
+  {{> burger/burger-block devoured=true}}
   {{/unless}}
   {{/each}}
 </ul>
 
-<h2>something else here</h2>
+<h2>Burgers that have been eaten</h2>
 
 <ul>
   {{#each burgers}}
@@ -20,19 +20,19 @@
   {{/each}}
 </ul>
 
-<h2>Add a Burger</h2>
+<h2>Type the name of a burger you would like to eat:</h2>
 <form class="create-form">
 
   <div class="form-group">
-    <label for="ca">Cat Name:</label>
-    <input type="text" id="ca" name="name">
+    <label for="burg">What burger would you like to eat?</label>
+    <input type="text" id="burg" burger_name="burger_name">
   </div>
 
   <div class="form-group">
-    <label for="sleepy">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Eaten<br>
-    <input type="radio" name="sleepy" value="0"> Available
+    <label for="devoured">Did you eat it already??</label><br>
+    <input type="radio" name="devoured" value="1" checked> Eaten/Yes<br>
+    <input type="radio" name="devoured" value="0"> Available/No
   </div>
 
-  <button type="submit">Create a New Burger</button>
+  <button type="submit">Add the Burger</button>
 </form>
