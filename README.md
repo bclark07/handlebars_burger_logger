@@ -1,4 +1,4 @@
-# note_taker
+# handlebars_burger_logger
 
 ## Function
 
