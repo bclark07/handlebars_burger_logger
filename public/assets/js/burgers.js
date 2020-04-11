@@ -25,6 +25,7 @@ $(function () {
 
     var newBurger = {
       burger_name: $("#burg").val().trim(),
+      restaurant_name: $("#rest").val().trim(),
       devoured: $("[name=devoured]:checked").val().trim(),
     };
 
